@@ -35,7 +35,7 @@ class Running extends Workout {
 
   calcPace() {
     // min/km
-    this.pace = this.duration / this.distance;
+    this.pace = (this.duration / this.distance).toFixed(3);
   }
 }
 
@@ -50,7 +50,7 @@ class Cycling extends Workout {
 
   calcSpeed() {
     // km/h
-    this.speed = this.distance / this.duration / 60;
+    this.speed = (this.distance / this.duration / 60).toFixed(3);
   }
 }
 
@@ -197,6 +197,9 @@ class App {
 
     // Set local storage to all workouts
     this._setLocalStorage();
+
+    // Add deleteAllWorkouts button
+    deleteAllBtn.style.display = 'block';
   }
 
   _renderWorkoutMarker(workout) {
@@ -298,6 +301,11 @@ class App {
 
     // Restore our workouts array
     this.#workouts = workouts;
+
+    // Show delete all button if there are workouts
+    if (this.#workouts.length > 0) {
+      deleteAllBtn.style.display = 'block';
+    }
   }
 
   _deleteAllWorkouts() {

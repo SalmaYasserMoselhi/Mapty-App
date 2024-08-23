@@ -220,6 +220,7 @@ a:visited {
 }
 
 .delete-all-btn {
+  display: none;
   background-color: var(--color-brand--2);
   color: #fff;
   border: none;
