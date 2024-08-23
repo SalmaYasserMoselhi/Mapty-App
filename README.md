@@ -16,9 +16,9 @@ Mapty is a web application that helps users track their workouts on a map. Users
 
 - Track running and cycling workouts.
 - View the location of each workout on a map.
-- Store workout data in local storage.
-- Edit and delete workouts.
 - Provides workout statistics, including pace and speed.
+- Store workout data in local storage.
+- delete all workouts.
 
 ## Installation
 
@@ -40,10 +40,10 @@ To install and run this project locally, follow these steps:
 ## Usage
 
 - Add your workout by clicking on the map to set your location.
-- Fill in the workout form with the required information such as distance, duration, and type of workout (running or cycling).
-- Click "Save" to store your workout.
+- Fill in the workout form with the required information such as distance, duration, type of workout (running or cycling), cadence for running and elevation gain for cycling.
+- Click "Enter" to store your workout.
 - Your workouts will be displayed on the map and stored in the browser's local storage.
-- You can also edit or delete existing workouts by selecting them from the list.
+- You can also delete all workouts from the list and local storage using "Delete All Workouts" button.
 
 ## Technologies
 
